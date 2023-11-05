@@ -17,6 +17,8 @@ public class DaysToNewYear {
         LocalDate fromDate = LocalDate.now();
         LocalDate newYear = fromDate.plusYears(1).withDayOfYear(1);
         return "There are " + Days.daysBetween(fromDate, newYear) + "days until the new year!";
+
     }
+
 
 }
