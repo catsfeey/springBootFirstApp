@@ -23,6 +23,11 @@ pipeline {
                 sh 'mvn spring-boot:run'
             }
         }
+        stage ('Package') {
+                    steps {
+                        sh 'mvn package'
+                    }
+                }
     }
 }
 
